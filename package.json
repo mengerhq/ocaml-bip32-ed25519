@@ -1,0 +1,34 @@
+{
+  "name": "bip32-ed25519",
+  "version": "0.0.1",
+  "description": "OCaml implementation of BIP32-Ed25519 (Khovratovich/Law flavour)",
+  "repository": "https://github.com/mengerhq/ocaml-bip32-ed25519",
+  "license": "ISC",
+  "esy": {
+    "build": [["dune", "build"]]
+  },
+  "scripts": {
+    "clean": "dune clean",
+    "test": "dune runtest"
+  },
+  "dependencies": {
+    "@opam/cstruct": "^3.2.1",
+    "@opam/dune": "^1.3.0",
+    "@opam/fmt": "^0.8.5",
+    "@opam/hex": "^1.2.0",
+    "@opam/ocplib-endian": ">=1.0",
+    "@opam/zarith": ">=1.7",
+    "monocypher": "*"
+  },
+  "peerDependencies": {
+    "ocaml": ">=4.2.0"
+  },
+  "devDependencies": {
+    "@esy-ocaml/merlin": "^3.0.5",
+    "@opam/alcotest": "^0.8.3",
+    "@opam/ezjsonm": "^0.6.0",
+    "@opam/ocplib-json-typed": ">=0.6",
+    "hacl": "*",
+    "ocaml": "~4.7.2"
+  }
+}
