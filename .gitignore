@@ -5,5 +5,4 @@ tmp
 \#*#
 *.install
 **/*.merlin
-dune-project
 node_modules
